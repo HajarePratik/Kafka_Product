@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumerService {
 
-    // Listener for group-2
+    // Listener for group-1
     @KafkaListener(topics = "${kafka.topic.name}", groupId = "product-group")
     public void listen(String message) {
         System.out.println("Consumed Group 1 Message : " + message);

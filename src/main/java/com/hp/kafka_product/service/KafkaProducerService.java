@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class KafkaProducerService {
 
     @Autowired
-    KafkaTemplate<String, String> kafkaTemplate;
+    private KafkaTemplate<String, String> kafkaTemplate;
 
     @Value("${kafka.topic.name}")
     private String topicName;
